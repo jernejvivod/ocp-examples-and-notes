@@ -20,15 +20,15 @@ This method throws a `java.util.NoSuchElementException` if the `Optional` instan
 
 The following table lists the important methods of an `Optional` instance.
 
-Method                    | When `Optional` is empty                            | When `Optional` contains a value
---------------------------|-----------------------------------------------------|-----------------------------------
-`get()`                   | Throws an exception                                 | Returns value
-`ifPresent(Consumer c)`   | Does nothing                                        | Calls `Consumer` with value
-`isPresent()`             | Returns false                                       | Returns true
-`orElse(T other)`         | Returns other parameter                             | Returns true
-`orElseGet(Supplier s)`   | Returns result of calling Supplier                  | Returns value
-`orElseThrow()`           | Throws `java.util.NoSuchElementException`           | Returns value
-`orElseThrow(Supplier s)` | Throws exception created by calling `Supplier`      | Returns value
+| Method                    | When `Optional` is empty                       | When `Optional` contains a value |
+|---------------------------|------------------------------------------------|----------------------------------|
+| `get()`                   | Throws an exception                            | Returns value                    |
+| `ifPresent(Consumer c)`   | Does nothing                                   | Calls `Consumer` with value      |
+| `isPresent()`             | Returns false                                  | Returns true                     |
+| `orElse(T other)`         | Returns other parameter                        | Returns true                     |
+| `orElseGet(Supplier s)`   | Returns result of calling Supplier             | Returns value                    |
+| `orElseThrow()`           | Throws `java.util.NoSuchElementException`      | Returns value                    |
+| `orElseThrow(Supplier s)` | Throws exception created by calling `Supplier` | Returns value                    |
 
 ## Chaining Optionals
 
