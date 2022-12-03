@@ -108,6 +108,11 @@ public class AnnotationsExamples
         }
     }
 
+    public static int invokeMethodAndMultiplyIntResultWithSumOfValuesInAnnotations2(Method method, Object... args) throws InvocationTargetException, IllegalAccessException
+    {
+        return ((int) method.invoke(new AnnotationsExamples(), args)) * Arrays.stream(method.getDeclaredAnnotationsByType(RepeatableAnnotation.class)).map(RepeatableAnnotation::value).mapToInt(e -> e).sum();
+    }
+
     // 9. Inherited Annotations
 
     @InheritedAnnotation

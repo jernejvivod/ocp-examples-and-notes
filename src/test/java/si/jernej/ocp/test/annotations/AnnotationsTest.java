@@ -118,6 +118,13 @@ class AnnotationsTest
     }
 
     @Test
+    void testRepeatableAnnotations2() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException
+    {
+        Assertions.assertEquals(7, AnnotationsExamples.invokeMethodAndMultiplyIntResultWithSumOfValuesInAnnotations2(AnnotationsExamples.class.getMethod("m1")));
+        Assertions.assertEquals(100, AnnotationsExamples.invokeMethodAndMultiplyIntResultWithSumOfValuesInAnnotations2(AnnotationsExamples.class.getMethod("m2")));
+    }
+
+    @Test
     void testInheritedAnnotation()
     {
         Assertions.assertTrue(AnnotationsExamples.D.class.isAnnotationPresent(InheritedAnnotation.class));
