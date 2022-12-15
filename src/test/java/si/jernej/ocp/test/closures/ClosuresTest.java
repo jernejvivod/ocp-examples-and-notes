@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import si.jernej.ocp.functional.closures.ClosureExamples;
 
-class TestClosures
+class ClosuresTest
 {
     @Test
     void testClosure()

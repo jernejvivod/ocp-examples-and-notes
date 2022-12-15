@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import si.jernej.ocp.proxy.ProxyExamples;
 
-class TestProxy
+class ProxyTest
 {
     @Test
     void testProxyingOfA()

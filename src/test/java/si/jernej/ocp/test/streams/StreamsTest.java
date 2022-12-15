@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import si.jernej.ocp.functional.streams.StreamsExamples;
 
-class TestStreams
+class StreamsTest
 {
     @Test
     void testGetStreamOfDistinctElements()
