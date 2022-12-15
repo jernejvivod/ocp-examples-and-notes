@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import si.jernej.ocp.functional.streams.reduce.ReduceExamples;
 
-class TestReduce
+class ReduceTest
 {
     @Test
     void testSumIntegersInStream()

@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import si.jernej.ocp.functional.streams.IntStreamExamples;
 
-class TestIntStreams
+class IntStreamsTest
 {
     @Test
     void testIntStreamToDoubleStream()

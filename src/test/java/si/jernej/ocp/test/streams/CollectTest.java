@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 import si.jernej.ocp.functional.streams.collect.CollectExamples;
 import si.jernej.ocp.functional.streams.collect.ProvidedCollectorsExamples;
 
-class TestCollect
+class CollectTest
 {
     // CollectExamples
 
